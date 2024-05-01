@@ -4,7 +4,13 @@
 
 ## Description
 
-IR Turret is a project that aims to create a turret controlled by infrared (IR) signals. It can be used for various applications such as security systems, remote control devices, or even as a fun DIY project.
+IR Turret is an unofficial based on the Crunch Labs Hackpack project that aims to create a turret controlled by infrared (IR) signals. It can be used for various applications such as security systems, remote control devices, or even as a fun DIY project.
+
+## Purpose
+
+For those who have already leveled up and want to push even further, you may find the web-based IDE a bit stifling. Environments like [platform.io](https://platformio.org) provide a more advanced development experience with features like advanced code editing, debugging, and library management.
+
+I have made some modifications to the basic code for fun but it has been tested on the IR turret robot provided in the first hackpack box.  That said, your mileage may very and I provide no garantees or liability for damage to  your device.  Legal business aside, have fun and be safe!
 
 ## Features
 
@@ -12,6 +18,10 @@ IR Turret is a project that aims to create a turret controlled by infrared (IR) 
 - Adjustable rotation and elevation angles
 - Support for different IR protocols
 - Easy integration with other projects
+
+## Crunch Labs
+
+[![IR Turret Demo](https://img.youtube.com/vi/1j1kAuqePJo/0.jpg)](https://www.youtube.com/watch?v=1j1kAuqePJo)
 
 ## Getting Started
 
@@ -42,3 +52,4 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
