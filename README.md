@@ -4,7 +4,7 @@
 
 ## Description
 
-IR Turret is an unofficial based on the Crunch Labs Hackpack project that aims to create a turret controlled by infrared (IR) signals. It can be used for various applications such as security systems, remote control devices, or even as a fun DIY project.
+IR Turret is unofficially based on the Crunch Labs Hackpack project that aims to create a turret controlled by infrared (IR) signals. It can be used for various applications such as security systems, remote control devices, or even as a fun DIY project.
 
 ## Purpose
 
