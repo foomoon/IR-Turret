@@ -10,7 +10,7 @@ IR Turret is unofficially based on the Crunch Labs Hackpack project that aims to
 
 For those who have already leveled up and want to push even further, you may find the web-based IDE a bit stifling. Environments like [platform.io](https://platformio.org) provide a more advanced development experience with features like advanced code editing, debugging, and library management.
 
-I have made some modifications to the basic code for fun but it has been tested on the IR turret robot provided in the first hackpack box.  That said, your mileage may very and I provide no garantees or liability for damage to  your device.  Legal business aside, have fun and be safe!
+I have made some modifications to the basic code for fun but it has been tested on the IR turret robot provided in the first hackpack box.  That said, your mileage may very and I provide no guarantees or liability for damage to  your device.  Legal business aside, have fun and be safe!
 
 ## Features
 
