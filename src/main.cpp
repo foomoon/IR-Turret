@@ -104,6 +104,7 @@ void upMove(int moves);
 void downMove(int moves);
 void fire(void);
 void fireAll(void);
+void fireBurst(int darts);
 void randomMoveAndFire(void);
 
 
@@ -299,11 +300,33 @@ void randomMoveAndFire() {
   pitchServo.write(pitchServoVal);
   delay(50);
 
-  int yawPos = int(random(0,180));
-  yawServo.write(yawPos);
+  // int yawPos = int(random(0,180));
+  // yawServo.write(yawPos);
+  pitchServo.write(100); // set PITCH servo to 100 degree position
+  delay(100);
+  int pitchmove = random(-5, 5);
+  if (pitchmove < 0)
+  {
+    upMove(pitchmove);
+  }
+  else
+  {
+    downMove(abs(pitchmove));
+  }
+
+  leftMove(random(1, 10));
+  rightMove(random(1, 10));
 
   delay(50);
-  fire(); 
+
+  if (random(0, 5) == 1)
+  {
+    fireBurst(3);
+  }
+  else
+  {
+    fire();
+  }
 }
 
 /**
@@ -317,12 +340,21 @@ void fire() { //function for firing a single dart
     Serial.println("FIRING");
 }
 
-void fireAll() { //function to fire all 6 darts at once
-    rollServo.write(rollStopSpeed + rollMoveSpeed);//start rotating the servo
-    delay(rollPrecision * 6); //time for 360 degrees of rotation
-    rollServo.write(rollStopSpeed);//stop rotating the servo
-    delay(5); // delay for smoothness
-    Serial.println("FIRING ALL");
+void fireBurst(int darts)
+{                                                 // function to fire a burst of darts
+  rollServo.write(rollStopSpeed + rollMoveSpeed); // start rotating the servo
+  delay(rollPrecision * darts);                   // time for 360 degrees of rotation
+  rollServo.write(rollStopSpeed);                 // stop rotating the servo
+  delay(5);                                       // delay for smoothness
+  Serial.print("FIRING ");
+  Serial.print(darts);
+  Serial.println(" DARTS");
+}
+
+void fireAll()
+{               // function to fire all 6 darts at once
+  fireBurst(6); // fire all 6 darts
+  Serial.println("FIRING ALL");
 }
 
 void homeServos(){
